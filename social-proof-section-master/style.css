@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 1110px;
+    height: 580px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.info{
+    width: 560px;
+    height: 320px;
+}
+.info h1{
+    color: #502253;
+    font-size: 50px;
+    font-weight: 700;
+    position: relative;
+    bottom: 30px;
+    left: 10px;
+}
+.info p{
+    color: #837582;
+    position: relative;
+    letter-spacing: 1px;
+    left: 10px;
+    bottom: 35px;
+    padding-right: 30px;
+    font-weight: 400;
+}
+.ratings{
+    height: 320px;
+    width: 560px;
+    grid-column: 2/2;
+}
+
+.comments{
+    width: 1115px;
+    height: 260px;
+}
