@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: #fff;
+    background: #fafafa;
     font-family: 'Spartan', sans-serif;
     font-size: 15px;
 }
@@ -12,6 +12,13 @@ body{
     display: flex; 
     justify-content: center;
     align-items: center;
+    background-image: 
+        url(/images/bg-pattern-top-desktop.svg),
+        url(/images/bg-pattern-bottom-desktop.svg);
+    background-position: 
+        right calc(40vw + 15%) bottom calc(84vh - 15vw), 
+        left calc(17vw + 25%) top calc(48vh - 15vw);
+    background-repeat: no-repeat;
 }
 
 .container{
@@ -73,5 +80,53 @@ body{
 
 .comments{
     width: 1115px;
-    height: 260px;
+    height: 280px;
+    display: flex;
+    justify-content: space-between;
+}
+.comment{
+    height: 240px;
+    width: 360px;
+    background: #511f50;
+    border-radius: 10px;
+    margin: 0 -20px 0 0;
+}
+.comment1{position: relative; top: -10%;}
+.comment2{position: relative; top: -5%;}
+.comment3{position: relative; top: 0%;}
+.profil{
+    position: relative;
+    left: 30px;
+    top: 40px;
+}
+.photo{
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+}
+.profil h2{
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    left: 70px;
+    bottom: 50px;
+    color: #fff;
+
+}
+.profil span{
+    font-size: 13px;
+    font-weight: 400;
+    position: relative;
+    left: 70px;
+    bottom: 60px;
+    color: #a45189;
+}
+.comment p{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0px 36px 0 28px;
+    line-height: 20px;
 }
