@@ -19,6 +19,7 @@ body{
         right calc(40vw + 15%) bottom calc(84vh - 15vw), 
         left calc(17vw + 25%) top calc(48vh - 15vw);
     background-repeat: no-repeat;
+    box-sizing: border-box;
 }
 
 .container{
@@ -129,4 +130,62 @@ body{
     font-weight: 400;
     padding: 0px 36px 0 28px;
     line-height: 20px;
+}
+.attribution{
+    font-size: 11px;
+    text-align: center;
+    position: relative;
+    bottom: 25px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+    .main{
+        display: block;
+        background-image: 
+        url(/images/bg-pattern-top-mobile.svg),
+        url(/images/bg-pattern-bottom-mobile.svg);
+        display: block;
+        background-position: right calc(-26vw + 15%) bottom calc(85vh - 17vw), left calc(0vw + 25%) top calc(113vh - 15vw);
+        background-repeat: no-repeat;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .info{
+        width: 375px;
+    }
+    .info h1{
+        display: flex;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 65px;
+    }
+    .info p{
+        display: flex;
+        text-align: center;
+        margin: 0px 35px 0 30px;
+    }
+    .ratings{margin-top: 15px;}
+    .rates{
+        flex-direction: column;
+        width: 350px;
+    }
+    .rates1{margin-left: 10px;}
+    .rates2{margin-left: 10px;}
+    .rates3{margin-left: 10px;}
+    .comments{
+        flex-direction: column;
+        width: 360px;
+        margin-top: 40px;
+    }
+    .comment{
+        width: 350px;
+        margin: 0 0px 0 15px;
+    }
+    .attribution{top: 515px;}
 }
